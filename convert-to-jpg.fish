@@ -32,7 +32,7 @@ end
 
 # Check if correct number of arguments is provided
 if test (count $argv) -ne 2
-    echo "Usage: fish convert_psd_to_jpg.fish /path/to/source/directory /path/to/target/directory"
+    echo "Usage: fish convert-to-jpg.fish /path/to/source/directory /path/to/target/directory"
     exit 1
 end
 
