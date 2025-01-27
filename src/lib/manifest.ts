@@ -7,6 +7,7 @@ export interface Manifest {
     works: string[];
     selected?: string[];
     name?: string;
+    sources?: { [name: string]: string }
   };
 }
 

@@ -10,7 +10,7 @@
   <a href="/">&larr; Back</a>
   {#each [...Object.entries(manifest)].toReversed() as [unit, mf]}
     <div class="mb-32">
-        <hr>
+      <hr />
       <h1 class="text-6xl">{mf.name || unit}</h1>
       {#if mf.selected}
         <h3>Selected Pieces</h3>
@@ -41,6 +41,17 @@
           >
         {/each}
       </div>
+      {#if mf.sources}
+        {@const entries = Object.entries(mf.sources)}
+        <div>
+          <p>
+            <strong>Sources:</strong>
+            {#each entries as [name, source], i}
+              <a href={source}>{name}</a>{#if i != entries.length - 1}{`, `}{/if}
+            {/each}
+          </p>
+        </div>
+      {/if}
     </div>
   {/each}
 </div>
