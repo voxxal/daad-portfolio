@@ -8,7 +8,7 @@
 
 <div class="mx-8 my-12">
   <a href="/">&larr; Back</a>
-  {#each [...Object.entries(manifest)].toReversed() as [unit, mf]}
+  {#each [...Object.entries(manifest)].toSorted(([ka, va], [kb, vb]) => -ka.localeCompare(kb)) as [unit, mf]}
     <div class="mb-32">
       <hr />
       <h1 class="text-6xl">{mf.name || unit}</h1>
