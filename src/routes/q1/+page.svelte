@@ -14,7 +14,7 @@
       <h1 class="text-6xl">{mf.name || unit}</h1>
       {#if mf.selected}
         <h3>Selected Pieces</h3>
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid gap-4" style="grid-template-columns: repeat({mf.selected.length}, minmax(0, 1fr))">
           {#each mf.selected as img}
             {@const path = `/images/${unit}/${img}`}
             <a href={path}
