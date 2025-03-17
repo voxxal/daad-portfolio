@@ -55,12 +55,14 @@ export const generate = async () => {
             imgs.push(f.name);
           }
         }
+
       }
 
       if (manifest[dirent.name].layout == "fantastical") {
       } else if (!manifest[dirent.name].layout){
         manifest[dirent.name].works = imgs;
       }
+      await unit.close()
     }
   }
   console.log(manifest);
