@@ -2,13 +2,30 @@ import { opendir, readFile } from "fs/promises";
 import { join } from "path";
 let mf: Manifest = {};
 
+
+export type ManifestEntry = NormalManifestEntry | FantasticalManifestEntry
+export interface NormalManifestEntry {
+  layout: undefined | "",
+  works: string[];
+  selected?: string[];
+  name?: string;
+  sources?: { [name: string]: string };
+}
+
+export interface FantasticalManifestEntry {
+  layout: "fantastical";
+  works: {
+    wips: number;
+    name: string;
+    path: string;
+    category: string;
+    description: string;
+    sources?: { [name: string]: string };
+  }[];
+}
+
 export interface Manifest {
-  [key: string]: {
-    works: string[];
-    selected?: string[];
-    name?: string;
-    sources?: { [name: string]: string }
-  };
+  [key: string]: ManifestEntry;
 }
 
 export const generate = async () => {
@@ -20,7 +37,9 @@ export const generate = async () => {
     if (!dirent) break;
     if (dirent.isDirectory()) {
       const unit = await opendir(join(dirent.parentPath, dirent.name));
-      manifest[dirent.name] = { works: [] };
+      manifest[dirent.name] = {} as any;
+
+      const imgs = [];
       while (true) {
         const f = await unit.read();
         if (!f) break;
@@ -33,9 +52,14 @@ export const generate = async () => {
               unitManifest
             );
           } else if (f.name.endsWith(".jpg")) {
-            manifest[dirent.name].works.push(f.name);
+            imgs.push(f.name);
           }
         }
+      }
+
+      if (manifest[dirent.name].layout == "fantastical") {
+      } else if (!manifest[dirent.name].layout){
+        manifest[dirent.name].works = imgs;
       }
     }
   }
