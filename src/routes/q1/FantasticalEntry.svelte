@@ -35,16 +35,14 @@
       /></a
     >
     <p>{work.description}</p>
-    {#if work.sources}
-      {@const entries = Object.entries(work.sources)}
-      <div>
-        <p>
-          <strong>Sources:</strong>
-          {#each entries as [name, source], i}
-            <a href={source}>{name}</a>{#if i != entries.length - 1}{`, `}{/if}
-          {/each}
-        </p>
-      </div>
-    {/if}
+    {@const entries = Object.entries(work.sources)}
+    <div>
+      <p>
+        <strong>Sources:</strong>
+        {#each entries as [name, source], i}
+          <a href={source}>{name}</a>{#if i != entries.length - 1}{`, `}{/if}
+        {/each}
+      </p>
+    </div>
   {/each}
 </div>

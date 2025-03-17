@@ -20,7 +20,7 @@ export interface FantasticalManifestEntry {
     path: string;
     category: string;
     description: string;
-    sources?: { [name: string]: string };
+    sources: { [name: string]: string };
   }[];
 }
 
