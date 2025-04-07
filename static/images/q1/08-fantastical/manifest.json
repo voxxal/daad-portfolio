@@ -1,0 +1,54 @@
+{
+  "name": "Fantastical Portraits",
+  "layout": "fantastical",
+  "works": [
+    {
+      "wips": 5,
+      "path": "grass",
+      "name": "(no) other side",
+      "category": "Alternative Perspective",
+      "description": "I guess you could really say that this is an alternative perspective, because almost everything in the image was perspective warped in some way to fit this top down angle. It took a lot of fiddling with the tool to make things look right, and even then I still think its possible to do much better then what I achieved. The prompt that inspired this piece was \"The grass is greener on the other side.\" I wanted to give the piece a liminal feel, so the surrounding enviornment is designed to look hostile and uninviting. The piece is supposed to convey how even though things might look grim on your patch of the earth, and somewhere else looks so much better, its not always nessasarily going to be better. This can be seen with how the grass on the other side peeks out and you can see the grass is dead on the other side as well. There are a lot of miscillanous elements that we're there to spicen up the scene, and I think I did a pretty good job of encorperating the elements without detracting from the overall atmosphere of the piece.",
+      "sources": {
+        "Concrete": "https://www.myfreetextures.com/old-dirt-plates-concrete-wall-texture/",
+        "Grass": "https://www.tomsguide.com/how-to/9-tips-to-revive-dead-grass-and-make-your-lawn-green-again",
+        "Light Bulb": "https://www.veranda.com/decorating-ideas/a44714662/incandescent-light-bulb-ban/",
+        "Tarp": "https://www.wayfair.com/outdoor/pdp/paragon-outdoor-mosquito-netting-and-privacy-panel-syt1126.html",
+        "Frame": "https://www.emergentsafety.com/jackson-safety-36338-1-panel-welding-curtain-frame",
+        "Landscape": "https://pixnio.com/nature-landscapes/hill/landscape-grass-agriculture-field-nature-countryside-hill",
+        "Cinder Blocks": "https://www.homedepot.com/p/Master-Products-8-in-x-8-in-x-16-in-2-Hole-Concrete-Block-BC010/204109011"
+      }
+    },
+    {
+      "wips": 4,
+      "path": "future",
+      "name": "your past's future",
+      "category": "Inner Vision",
+      "description": "Could you agree with your future self with who you'll become? I tried to convey this through someone shaking their hands with their future self, but the future self was pixelated or otherwise obscured to represent how you really don't know how your future is going to pan out. The clocks and books in the background of the painting represent that no matter which way you go in life, you'll be learning, and time will inevitibly pass. The DeLorean is just a reference to Back To The Future. I wanted to do more by putting things onto the real world side but that turned out to be really difficult due to the 3d nature of the real world. The lines on the wall were the last thing I added, originally I picked 3 random colors which just happened to be red, yellow, and green, but I later changed the blending modes to make the green more viberant, sort of like a traffic light thats telling you to keep going forward. There are a few things I'm unhappy with in this piece, for one, I still think I could have put more things on the real world side, and additionally, the face is a bit obscured by the pixelation, and I think more could be done to fix that.",
+      "sources": {
+        "DeLorean": "https://en.wikipedia.org/wiki/DeLorean_time_machine#",
+        "Clock 1": "https://www.goodshomefurnishings.com/howard-miller-office-mate-wall-clock/625-254-1412/iteminformation.aspx",
+        "Clock 2": "https://www.seikoclocksusa.com/collections/qxa598blh/",
+        "Books": "https://www.forbes.com/sites/entertainment/article/powerful-books/",
+        "Painting": "https://www.albumoftheyear.org/album/539842-ax-and-the-hatchetmen-grace.php",
+        "Original Image": "https://billdambrova.com/exhibitions"
+      }
+    },
+    {
+      "wips": 4,
+      "path": "world",
+      "name": "my website!",
+      "category": "Personal Identity",
+      "description": "I took the boldest risks on this piece and honestly I don't think a lot of them worked very well. The end goal was to recreate the aesthetics of old 90's websites where people just created independent websites that, sure didn't look good, but ultimately served to represent their own personality. Because the people creating these websites oftentimes did not know what design was, to create this piece I followed a sort of \"antidesign\" where things intentionally were designed to look not that great. The combination of Comic Sans, with the low quality jpeg compressed background to the random sparkle graphics and clip art all try to build towards the website of someone who wanted to represent themselves would build. I think that type of spirit in creating something for the sake of creating it has kind of been lost, especially with website builders making it easier than ever to build good looking websites. Nevertheless, this piece serves to show off a few crutial parts of my own identity. I love creating websites, and I've been doing it for a while, but it's also something that I feel has restricted me from trying new things. I've found what I'm good at, so why stray from the path? This is what the bars of text represent, streaming down the page. The background sections represents parts of my life that I invest my time into. I make blog posts covering topics that I find interesting, I play a lot of games, and the guestbook just shows up in a lot of 90's websites. Regardless of all the risks I took making this piece, I can't say I'm happy with how it turned out. It takes a lot of work to make elements that intentionally look bad come together cohesively, and I don't think I pulled that off quite well enough.",
+      "sources": {
+        "Background": "https://unsplash.com/photos/blue-sky-with-clouds-viNPa2F7fnw",
+        "Blog Vector Art": "https://pixabay.com/vectors/search/blog/",
+        "Game Controller": "https://creazilla.com/media/clipart/3154558/controller",
+        "Guestbook": "https://www.fg-a.com/guestgifs.htm",
+        "Sparkle": "https://www.vecteezy.com/free-vector/gold-sparkle",
+        "Netscape Navigator Pin": "https://hellnet.work/8831/",
+        "Flash Pin": "https://hellnet.work/8831/",
+        "HTML Pin": "https://hellnet.work/8831/"
+      }
+    }
+  ]
+}

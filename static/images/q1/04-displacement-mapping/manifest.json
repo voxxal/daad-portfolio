@@ -1,0 +1,13 @@
+{
+  "name": "Displacement Mapping",
+  "selected": ["bottle.jpg", "chair.jpg", "shirt.jpg"],
+  "sources": {
+    "Water Texture": "https://science.howstuffworks.com/environmental/earth/geophysics/question157.htm",
+    "Hydro Flask": "https://maineflyco.com/products/mfc-hydroflask-32oz",
+    "Strawberries": "https://snaped.fns.usda.gov/resources/nutrition-education-materials/seasonal-produce-guide/strawberries",
+    "Chocolate": "https://www.npr.org/sections/thesalt/2016/06/25/482538542/with-a-zap-scientists-create-low-fat-chocolate",
+    "Chair": "https://www.walmart.com/ip/Alden-Design-Mid-Century-Modern-Faux-Leather-Wingback-Accent-Chair-Brown/740181008",
+    "Couch": "https://www.amazon.com/JACH-Convertible-Sectional-Removable-Apartment/dp/B0CFFJBTPQ",
+    "Shirt": "https://www.hockerty.com/en/mens-outfits/786-white-shirt-with-green-bermuda-shorts/"
+  }
+}
