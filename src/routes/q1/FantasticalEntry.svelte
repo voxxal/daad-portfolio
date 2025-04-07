@@ -15,7 +15,7 @@
       style="grid-template-columns: repeat({work.wips}, minmax(0, 1fr))"
     >
       {#each { length: work.wips } as _, wip}
-        {@const path = `/images/${unit}/${work.path}-${wip}.jpg`}
+        {@const path = `/images/q1/${unit}/${work.path}-${wip}.jpg`}
         <a href={path}
           ><img
             class="w-full border border-black border-solid"
@@ -26,7 +26,7 @@
       {/each}
     </div>
     <h3 class="text-xl">Final</h3>
-    {@const path = `/images/${unit}/${work.path}-final.jpg`}
+    {@const path = `/images/q1/${unit}/${work.path}-final.jpg`}
     <a href={path}
       ><img
         class="w-full border border-black border-solid"

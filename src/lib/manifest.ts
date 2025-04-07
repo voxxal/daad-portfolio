@@ -1,7 +1,7 @@
 import { opendir, readFile } from "fs/promises";
 import { join } from "path";
-let mf: Manifest = {};
-
+let mf1: Manifest = {};
+let mf2: Manifest = {};
 
 export type ManifestEntry = NormalManifestEntry | FantasticalManifestEntry
 export interface NormalManifestEntry {
@@ -28,9 +28,9 @@ export interface Manifest {
   [key: string]: ManifestEntry;
 }
 
-export const generate = async () => {
+export const generate = async (mf: Object, path: string) => {
   if (Object.keys(mf).length !== 0) return mf;
-  const units = await opendir("static/images/");
+  const units = await opendir("static/images/" + path);
   const manifest: Manifest = {};
   while (true) {
     const dirent = await units.read();
@@ -71,6 +71,7 @@ export const generate = async () => {
   return manifest;
 };
 
-generate();
+generate(mf1, "q1");
+generate(mf1, "q2");
 
-export default mf;
+export { mf1, mf2 };

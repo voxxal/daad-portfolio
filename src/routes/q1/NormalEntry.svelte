@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { NormalManifestEntry } from "$lib/manifest";
   const { mf, unit }: { mf: NormalManifestEntry; unit: string } = $props();
+  const otherWork = mf.works.filter((x) => !mf.selected?.includes(x));
 </script>
 
 <div class="mb-32">
@@ -14,7 +15,7 @@
         .length}, minmax(0, 1fr))"
     >
       {#each mf.selected as img}
-        {@const path = `/images/${unit}/${img}`}
+        {@const path = `/images/q1/${unit}/${img}`}
         <a href={path}
           ><img
             class="w-full border border-black border-solid"
@@ -26,19 +27,21 @@
     </div>
   {/if}
 
-  <h3>All Work</h3>
-  <div class="grid grid-cols-9 gap-4">
-    {#each mf.works as img}
-      {@const path = `/images/${unit}/${img}`}
-      <a href={path}
-        ><img
-          class="w-full border border-black border-solid"
-          src={path}
-          alt={img}
-        /></a
-      >
-    {/each}
-  </div>
+  {#if otherWork.length}
+    <h3>Other Work</h3>
+    <div class="grid grid-cols-9 gap-4">
+      {#each otherWork as img}
+        {@const path = `/images/q1/${unit}/${img}`}
+        <a href={path}
+          ><img
+            class="w-full border border-black border-solid"
+            src={path}
+            alt={img}
+          /></a
+        >
+      {/each}
+    </div>
+  {/if}
   {#if mf.sources}
     {@const entries = Object.entries(mf.sources)}
     <div>
