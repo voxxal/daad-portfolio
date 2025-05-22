@@ -3,7 +3,7 @@ import { join } from "path";
 let mf1: Manifest = {};
 let mf2: Manifest = {};
 
-export type ManifestEntry = NormalManifestEntry | FantasticalManifestEntry | SingleManifestEntry
+export type ManifestEntry = NormalManifestEntry | FantasticalManifestEntry | SingleManifestEntry | VPManifestEntry
 export interface NormalManifestEntry {
   layout: undefined | "",
   works: string[];
@@ -30,6 +30,12 @@ export interface FantasticalManifestEntry {
     description: string;
     sources: { [name: string]: string };
   }[];
+}
+
+export interface VPManifestEntry {
+  layout: "vp";
+  name?: string;
+  works: string[]
 }
 
 export interface Manifest {

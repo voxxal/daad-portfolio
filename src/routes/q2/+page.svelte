@@ -3,6 +3,8 @@
   import type { PageProps } from "./$types";
   import SingleEntry from "./SingleEntry.svelte";
   import NormalEntry from "./NormalEntry.svelte";
+  import Portrait from "./Portrait.svelte";
+  import VpEntry from "./VPEntry.svelte";
   const { data }: PageProps = $props();
   const manifest: Manifest = (data as any).manifest;
   $effect(() => console.log(manifest));
@@ -15,6 +17,8 @@
       <NormalEntry {unit} {mf} />
     {:else if mf.layout == "single"}
       <SingleEntry {unit} {mf} />
+    {:else if mf.layout == "vp"}
+      <VpEntry {unit} {mf} />
     {/if}
   {/each}
 </div>
